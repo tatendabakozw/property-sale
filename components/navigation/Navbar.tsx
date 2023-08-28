@@ -12,6 +12,8 @@ function Navbar({}: Props) {
   const nav_links = [
     {name:'home', path: '/'},
     {name:'about', path: '/about'},
+    {name:'explore', path: '/explore'},
+
   ]
 
   const handleScroll = () => {
@@ -60,8 +62,8 @@ function Navbar({}: Props) {
           
           </div>
 
-        <div className="contact bg-primary-original text-white font-semibold rounded-full px-3 py-2">
-          contact
+        <div className="contact bg-primary-original text-white font-semibold capitalize rounded-full px-3 py-2">
+          Contact
         </div>
       </div>
     </div>
