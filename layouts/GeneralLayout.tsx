@@ -1,3 +1,4 @@
+import Footer from "@/components/navigation/Footer";
 import Navbar from "@/components/navigation/Navbar";
 import React, { ReactNode } from "react";
 
@@ -12,9 +13,9 @@ function GeneralLayout({ children }: Props) {
         <Navbar />
       </nav>
       <div className="flex flex-col w-full min-h-screen">{children}</div>
-      {/* <footer>
-            footer
-        </footer> */}
+      <footer>
+            <Footer/>
+        </footer>
     </div>
   );
 }

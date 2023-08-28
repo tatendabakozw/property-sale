@@ -20,11 +20,34 @@ function HeroSection({}: Props) {
         width: "100%",
       }}
     >
+      {/* <header className="mb-16 group">
+  <h1 className="mb-1 font-mono text-4xl text-gray-100 md:text-6xl">
+    hi, I'm <br className="block md:hidden" />
+    <span
+      className="inline-flex h-20 pt-2 overflow-x-hidden animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform"
+    >
+      vanntile 👋
+    </span>
+    <span
+      className="box-border inline-block w-1 h-10 ml-2 -mb-2 bg-white md:-mb-4 md:h-16 animate-cursor will-change-transform"
+    ></span>
+  </h1>
+  <div className="text-xl font-semibold md:text-3xl">developer by choice and designer for fun</div>
+</header> */}
+
       <div className="overlay  absolute  top-0 right-0 left-0 bottom-0 bg-black z-0 opacity-40"></div>
       <div className="min-h-screen grid items-center content-center justify-center w-full z-10 space-y-4 ">
-        <p className="md:text-6xl text-3xl font-semibold text-white text-center">
-          Find Your Dream Home
-        </p>
+        <div className="flex  items-center justify-center ">
+          <div className="w-max">
+            {/* <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-white font-bold">
+              Find Your Dream Home
+            </h1> */}
+            <p className="md:text-6xl text-3xl font-semibold text-white text-center animate-typing overflow-hidden whitespace-nowrap ">
+              Find Your Dream Home
+            </p>
+          </div>
+        </div>
+
         <p className="text-white md:text-lg text-sm text-center">
           From as low as $10 per day with limited time offer discounts.
         </p>

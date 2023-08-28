@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <GeneralLayout>
       <main>
+       
         <HeroSection />
         <PropertiesSection />
         <LocationSection />

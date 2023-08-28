@@ -6,6 +6,9 @@
   font-family: 'Inter', sans-serif;
 /* font-family: 'Open Sans', sans-serif; */
 }
+.will-change-transform {
+  will-change: transform;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
