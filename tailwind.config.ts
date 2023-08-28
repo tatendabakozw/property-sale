@@ -16,10 +16,10 @@ const config: Config = {
       },
       colors: {
         primary: {
-          light: '#6d7f8a',
-          superlight: '#acb6bc',
-          dark: '#21323e',
-          superdark: '#131d23',
+          light: '#ff8e9d',
+          superlight: '#ffbec7',
+          dark: '#b34151',
+          superdark: '#66252e',
           original: '#ff5d73'
         },
         secondary: {
