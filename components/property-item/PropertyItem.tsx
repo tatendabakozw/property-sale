@@ -2,12 +2,14 @@ import React from "react";
 import house1 from "../../public/house1.jpg";
 import { MapIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 type Props = {};
 
 const PropertyItem = (props: Props) => {
+  const router = useRouter()
   return (
-    <div className="max-w-lg flex rounded-lg flex-col bg-white shadow space-y-4 p-2">
+    <div onClick={() => router.push('/details')} className="cursor-pointer max-w-lg flex rounded-lg flex-col bg-white shadow space-y-4 p-2">
       <div
         className="h-52 rounded-lg flex flex-col bg-no-repeat p-4 relative overflow-hidden"
         style={{
