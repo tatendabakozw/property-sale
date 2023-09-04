@@ -8,7 +8,7 @@ type Props = {};
 const Details = (props: Props) => {
   return (
     <GeneralLayout>
-      <div className="py-32 min-h-screen">
+      <div className="pt-32 min-h-screen">
         <GallerySection />
         <ProductDescriptionSection />
       </div>
