@@ -7,7 +7,7 @@ import AboveFooter from "@/components/navigation/AboveFooter";
 
 export default function Home() {
   return (
-    <GeneralLayout>
+    <GeneralLayout title="Home Page" description="Find a good home">
       <main>
         <HeroSection />
         <PropertiesSection />

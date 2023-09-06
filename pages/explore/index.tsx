@@ -6,7 +6,7 @@ type Props = {};
 
 const Explore = (props: Props) => {
   return (
-    <GeneralLayout>
+    <GeneralLayout title="Explore" description="Explore all our properties">
       <div className="bg-slate-100 min-h-screen py-32">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-3 gap-8 px-2">
           <p className="text-2xl col-span-3 font-semibold text-slate-700">

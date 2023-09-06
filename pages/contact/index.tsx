@@ -14,7 +14,7 @@ type Props = {};
 
 const Contact = (props: Props) => {
   return (
-    <GeneralLayout>
+    <GeneralLayout title="Contact Us" description="Find how to contact us">
       <div className="flex flex-col w-full h-full py-16 flex-1 bg-slate-100 ">
         <div
           className="h-96  py-8 relative"
