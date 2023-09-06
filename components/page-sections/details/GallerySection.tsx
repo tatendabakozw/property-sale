@@ -104,9 +104,9 @@ const PropertyImage = ({ item }: PropertyImageProps) => {
       className="relative overflow-hidden h-32 col-span-1 bg-slate-100 rounded-xl"
     >
       <Image src={item.image} alt="Main image" layout="fill" />
-      <Modal size={"4xl"} isCentered isOpen={isOpen} onClose={onClose}>
+      <Modal size={"5xl"} isCentered isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent rounded={"lg"}>
+        <ModalContent height={'2xl'} rounded={"lg"} overflow={'hidden'}>
           <ModalBody>
             <div className="flex h-96 rounded overflow-hidden">
               <Image src={item.image} alt="Main image" layout="fill" />
