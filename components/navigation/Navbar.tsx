@@ -62,9 +62,9 @@ function Navbar({}: Props) {
           
           </div>
 
-        <div className="contact bg-primary-original text-white font-semibold capitalize rounded-full px-3 py-2">
+        <Link href={'/contact'} className="contact bg-primary-original text-white font-semibold capitalize rounded-full px-3 py-2">
           Contact
-        </div>
+        </Link>
       </div>
     </div>
   );
