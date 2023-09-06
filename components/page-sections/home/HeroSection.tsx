@@ -6,7 +6,7 @@ type Props = {};
 
 function HeroSection({}: Props) {
   const [option, setOption] = useState("buy");
-  const router = useRouter()
+  const router = useRouter();
 
   const home_options = [
     { name: "buy", option: "buy" },
@@ -26,7 +26,7 @@ function HeroSection({}: Props) {
       <div className="min-h-screen grid items-center content-center justify-center w-full z-10 space-y-4 ">
         <div className="flex  items-center justify-center ">
           <div className="w-max">
-            <p className="md:text-6xl text-3xl font-semibold text-white text-center animate-typing overflow-hidden whitespace-nowrap ">
+            <p className="writer-text md:text-6xl text-3xl font-semibold text-white text-center overflow-hidden whitespace-nowrap ">
               Find Your Dream Home
             </p>
           </div>
@@ -79,7 +79,10 @@ function HeroSection({}: Props) {
               className="p-2 rounded border border-slate-300 col-span-1"
               placeholder="Price..."
             />
-            <div onClick={() => router.push('/explore')} className="contact bg-primary-original text-white font-semibold rounded-lg text-center col-span-1 px-3 py-2">
+            <div
+              onClick={() => router.push("/explore")}
+              className="contact bg-primary-original text-white font-semibold rounded-lg text-center col-span-1 px-3 py-2"
+            >
               Search
             </div>
           </div>

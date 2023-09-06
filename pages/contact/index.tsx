@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaPinterest,
 } from "react-icons/fa";
+import AboveFooter from "@/components/navigation/AboveFooter";
 
 type Props = {};
 
@@ -26,7 +27,14 @@ const Contact = (props: Props) => {
         >
           <div className="overlay  absolute  top-0 right-0 left-0 bottom-0 bg-black z-0 opacity-40"></div>
           <div className="max-w-7xl w-full mx-auto px-2 z-10 grid items-center content-center h-full flex-1">
-            <p className="text-5xl font-semibold text-white z-10">Contact Us</p>
+            <div className="flex flex-col space-y-2 z-10">
+              <p className="space-x-4 text-white pl-2">
+                Home <span>/</span> Contact
+              </p>
+              <p className="text-5xl font-semibold text-white z-10">
+                Contact Us
+              </p>
+            </div>
           </div>
         </div>
         <div className="grid md:grid-cols-7 grid-cols-1 gap-8 max-w-7xl w-full mx-auto py-16">
@@ -110,6 +118,7 @@ const Contact = (props: Props) => {
           </div>
         </div>
       </div>
+      <AboveFooter />
     </GeneralLayout>
   );
 };
