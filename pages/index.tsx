@@ -9,12 +9,11 @@ export default function Home() {
   return (
     <GeneralLayout>
       <main>
-    
         <HeroSection />
         <PropertiesSection />
         <LocationSection />
         <WhyUsSection />
-       <AboveFooter/>
+        <AboveFooter />
       </main>
     </GeneralLayout>
   );
