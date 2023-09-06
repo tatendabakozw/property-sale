@@ -88,7 +88,7 @@ const ProductDescriptionSection = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="md:col-span-2 col-span-5">
           <div className="bg-white md:p-8 p-2 rounded-lg shadow flex flex-col space-y-4">
             <p className="text-lg font-semibold text-slate-700 ">Listed By</p>
             <div className="flex flex-row items-center space-x-2">

@@ -3,6 +3,7 @@ import harare from "@/public/harare.jpg";
 import masvingo from "@/public/masvingo.jpg";
 import bulawayo from "@/public/bulawayo.jpg";
 import mutare from "@/public/mutare.jpeg";
+import Link from "next/link";
 
 type Props = {};
 interface ItemLocationProps {
@@ -59,7 +60,7 @@ const LocationItem = ({
   properties,
 }: ItemLocationProps) => {
   return (
-    <div
+    <Link href={'/explore'}
       className={`${span} md:h-96 h-80 rounded-lg p-6 relative flex flex-col items-center overflow-hidden bg-no-repeat cursor-pointer`}
       style={{
         backgroundImage: `url(${image.src})`,
@@ -72,7 +73,7 @@ const LocationItem = ({
       <div className="flex-1"></div>
       <p className="text-white font-semibold text-lg z-10">{location}</p>
       <p className="text-white z-10">{properties} Properties</p>
-    </div>
+    </Link>
   );
 };
 
