@@ -7,7 +7,7 @@ type Props = {};
 
 const Details = (props: Props) => {
   return (
-    <GeneralLayout>
+    <GeneralLayout title="Property Details" description="See description about this property">
       <div className="pt-32 min-h-screen">
         <GallerySection />
         <ProductDescriptionSection />
