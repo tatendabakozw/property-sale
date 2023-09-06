@@ -26,6 +26,14 @@ function Navbar({}: Props) {
     { name: "explore", path: "/explore" },
   ];
 
+  const mobile_nav_links = [
+    { name: "home", path: "/" },
+    { name: "about", path: "/about" },
+    { name: "explore", path: "/explore" },
+    { name: "contact us", path: "/contact" },
+
+  ];
+
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -99,7 +107,7 @@ function Navbar({}: Props) {
             </div>
           </MenuButton>
           <MenuList>
-            {nav_links.map((item, index) => (
+            {mobile_nav_links.map((item, index) => (
               <MenuItem key={index}>
                 <Link
                   href={item.path}
